@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  position: relative; /* Set relative positioning for the pseudo-element */
+}
+
+.container.forms::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: #000;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1048px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container.forms::before {
+    display: none;
+  }
+
+  .left-form, .right-form {
+   flex-basis: 100%; /* Changer la taille de base des formulaires */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-form, .right-form {
+    flex-basis: 100%; /* Les formulaires prennent toute la largeur */
+  }
+}

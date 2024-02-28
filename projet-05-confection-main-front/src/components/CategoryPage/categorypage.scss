@@ -1,0 +1,50 @@
+.subcategory-link {
+  color: inherit; /* Inherit color from the parent, usually black */
+  text-decoration: none; /* Remove underline */
+  color: black;
+}
+
+.subcategory-link:hover {
+  color: #1f2020; /* Change color on hover if needed */
+}
+
+ul {
+  display: flex;
+  flex-direction: line;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1em;
+  margin-bottom: 5em;
+}
+
+li {
+  font-size: large;
+  text-transform: capitalize;
+  border-radius: 10%;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+  padding: 0.5em;
+}
+
+h1 {
+  padding-top: 1em;
+  margin-left: 1em;
+}
+
+h2 {
+  text-align: left;
+  padding-bottom: 1em;
+}
+
+.subcategory-label {
+  position: absolute;
+  top: 50%;
+  left: 31%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  width: 50%;
+  line-height: normal;
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
